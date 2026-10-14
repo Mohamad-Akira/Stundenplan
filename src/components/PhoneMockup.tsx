@@ -28,9 +28,9 @@ export const PhoneMockup: React.FC<PhoneMockupProps> = ({ t }) => {
   const currentWeekNumber = 42 + weekOffset;
 
   return (
-    <div className="relative mx-auto max-w-[320px] sm:max-w-[350px] w-full select-none text-left">
+    <div className="relative mx-auto max-w-[300px] sm:max-w-[340px] w-full select-none text-left">
       {/* Outer Phone Bezel Chassis */}
-      <div className="relative rounded-[40px] p-2.5 bg-gradient-to-b from-[#252a3a] via-[#141826] to-[#0d101c] shadow-2xl shadow-orange-950/25 border border-slate-700/60">
+      <div className="relative rounded-[36px] sm:rounded-[40px] p-2 sm:p-2.5 bg-gradient-to-b from-[#252a3a] via-[#141826] to-[#0d101c] shadow-2xl shadow-orange-950/25 border border-slate-700/60">
         
         {/* Subtle Hardware Buttons */}
         <div className="absolute -left-[3px] top-24 w-[3px] h-10 bg-slate-600 rounded-l-xs opacity-60"></div>
@@ -38,7 +38,7 @@ export const PhoneMockup: React.FC<PhoneMockupProps> = ({ t }) => {
         <div className="absolute -right-[3px] top-28 w-[3px] h-14 bg-slate-600 rounded-r-xs opacity-60"></div>
 
         {/* Screen Glass Surface */}
-        <div className="relative rounded-[32px] bg-[#070a12] text-slate-100 overflow-hidden border border-white/5 flex flex-col h-[590px] sm:h-[620px]">
+        <div className="relative rounded-[28px] sm:rounded-[32px] bg-[#070a12] text-slate-100 overflow-hidden border border-white/5 flex flex-col h-[520px] sm:h-[600px]">
           
           {/* Top Dynamic Island / Speaker Pill */}
           <div className="pt-2 px-5 flex items-center justify-between text-[11px] font-mono text-slate-400 shrink-0">
