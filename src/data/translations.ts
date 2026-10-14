@@ -9,7 +9,7 @@ export interface TranslationContent {
     badge: string;
     title: string;
     titleHighlight: string;
-    subtitle: string;
+    subtitle?: string;
     downloadAndroid: string;
     iosComingSoon: string;
     iosBadge: string;
@@ -76,7 +76,6 @@ export const translations: Record<Language, TranslationContent> = {
       badge: 'Stundenplan App',
       title: 'Dein Uni-Stundenplan.',
       titleHighlight: 'Klar und schnell.',
-      subtitle: 'Alle Vorlesungen, Übungen und Raumcodes mit einem Klick im Blick.',
       downloadAndroid: 'Android APK herunterladen',
       iosComingSoon: 'iOS App Store',
       iosBadge: 'Demnächst',
@@ -147,7 +146,6 @@ export const translations: Record<Language, TranslationContent> = {
       badge: 'Stundenplan App',
       title: 'Your University Timetable.',
       titleHighlight: 'Clear and fast.',
-      subtitle: 'All your lectures, courses, and room codes in one clean view.',
       downloadAndroid: 'Download Android APK',
       iosComingSoon: 'iOS App Store',
       iosBadge: 'Coming Soon',

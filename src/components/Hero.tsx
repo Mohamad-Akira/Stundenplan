@@ -77,9 +77,11 @@ export const Hero: React.FC<HeroProps> = ({
         </h1>
 
         {/* Centered Subtitle */}
-        <p className="mt-2 sm:mt-3 text-xs sm:text-base md:text-lg text-stone-600 max-w-sm sm:max-w-xl mx-auto leading-relaxed">
-          {t.hero.subtitle}
-        </p>
+        {t.hero.subtitle && (
+          <p className="mt-2 sm:mt-3 text-xs sm:text-base md:text-lg text-stone-600 max-w-sm sm:max-w-xl mx-auto leading-relaxed">
+            {t.hero.subtitle}
+          </p>
+        )}
 
         {/* Centered Download Actions - Streamlined for Mobile */}
         <div id="download" className="mt-4 sm:mt-6 flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3 w-full max-w-xs sm:max-w-lg mx-auto">
