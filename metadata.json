@@ -1,0 +1,8 @@
+{
+  "name": "Stundenplan - Uni-Stundenplan App",
+  "description": "Die moderne Stundenplan-App für Studierende. Schnell, übersichtlich und offline verfügbar für Android und bald für iOS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
