@@ -13,7 +13,7 @@ export default function App() {
   const [isApkGuideOpen, setIsApkGuideOpen] = useState(false);
   const [isIosModalOpen, setIsIosModalOpen] = useState(false);
   const [isQrModalOpen, setIsQrModalOpen] = useState(false);
-  const DEFAULT_EAS_URL = 'https://expo.dev/accounts/akira_design9/projects/stundenplan/builds/db108679-e640-45d7-ba97-072c910e9bc1';
+  const DEFAULT_EAS_URL = 'https://expo.dev/accounts/akira_design9/projects/stundenplan/builds/97b7d2b0-b14e-4225-a384-3769dddc8517';
   const [apkUrl, setApkUrl] = useState(DEFAULT_EAS_URL);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
