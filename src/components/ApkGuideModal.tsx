@@ -116,33 +116,6 @@ export const ApkGuideModal: React.FC<ApkGuideModalProps> = ({
               </div>
             </div>
           </div>
-
-          {/* EAS Developer Config Box */}
-          <div className="p-4 rounded-xl bg-[#141b30] border border-orange-500/20">
-            <div className="flex items-center gap-2 text-xs font-bold text-orange-400 mb-2">
-              <Settings2 className="w-4 h-4" />
-              <span>{t.apkModal.customUrlLabel}</span>
-            </div>
-            <p className="text-[11px] text-slate-400 mb-3">
-              Hier kannst du den direkten EAS Build Download-Link deiner Expo-App eintragen (z.B. https://expo.dev/artifacts/eas/... oder Google Drive / GitHub Releases).
-            </p>
-
-            <form onSubmit={handleSaveUrl} className="flex gap-2">
-              <input
-                type="url"
-                value={inputUrl}
-                onChange={(e) => setInputUrl(e.target.value)}
-                placeholder={t.apkModal.customUrlPlaceholder}
-                className="flex-1 bg-[#0b0e1a] border border-white/10 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-orange-500 font-mono"
-              />
-              <button
-                type="submit"
-                className="px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-xs font-semibold whitespace-nowrap transition-colors"
-              >
-                {saved ? <Check className="w-4 h-4" /> : t.apkModal.saveUrl}
-              </button>
-            </form>
-          </div>
         </div>
 
         {/* Footer Actions */}
